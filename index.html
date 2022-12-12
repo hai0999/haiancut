@@ -21,29 +21,28 @@
 </style>
 
 <body>
-    <div class="container"> 
+    <div class="container">
         <div class="detail-image">
-            <img id="image" src="image/banner1.jpeg" alt="">
+            <img id="image" src="/slice.img/image/banner1.jpeg" alt="">
         </div>
     </div>
 
 </body>
 <script>
-    let arrayImages = ["image/banner1.jpeg", "image/banner2.jpeg", 
-    "image/banner3.jpeg", "image/banner4.jpeg" ]
+    let arrayImages = ["/slice.img/image/banner1.jpeg", "/slice.img/image/banner2.jpeg", "/slice.img/image/banner3.jpeg", "/slice.img/image/banner4.jpeg"]
     let count = 0;
-    let showBanner = function(){
+    let showBanner = function () {
         let image = document.getElementById("image");
         image.src = arrayImages[`${count}`];
         count++;
-        if(count == 4){
+        if (count == 4) {
             count = 0;
         }
     }
     setInterval(showBanner, 1000);
 
 
-    
+
 </script>
 
 </html>
